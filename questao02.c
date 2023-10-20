@@ -25,11 +25,11 @@ int main() {
     for (int i = 0; i < 1000; i++) {
         if (vetor[i] == numero) {
             printf("%d ", i);
-            encontrado = 1;
+            encontrado ++ 1;
         }
     }
 
-    if (encontrado) {
+    if (encontrado != 0 ) {
         printf("\nO número %d foi encontrado no vetor.\n");
     } else {
         printf("\nO número %d não foi encontrado no vetor.\n");
